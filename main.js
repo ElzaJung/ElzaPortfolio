@@ -78,8 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize typewriter effect
   const typewriterElement = document.getElementById("typewriter");
 
-
-
   if (typewriterElement) {
     new Typewriter({
       element: typewriterElement,
@@ -95,15 +93,21 @@ document.addEventListener("DOMContentLoaded", () => {
   if (greetingElement) {
     new Typewriter({
       element: greetingElement,
-      words: ["Hello!", "Hola!", "안녕하세요!", "Bonjour!", "こんにちは!", "你好!"],
+      words: [
+        "Hello!",
+        "Hola!",
+        "안녕하세요!",
+        "Bonjour!",
+        "こんにちは!",
+        "你好!",
+      ],
       typingSpeed: 150,
       erasingSpeed: 100,
       newTextDelay: 3000,
       startDelay: 0,
-      textClass: "text-white"
+      textClass: "text-black",
     });
   }
-
 
   // Add hover effect to project cards
   const projectCards = document.querySelectorAll(".bg-white");

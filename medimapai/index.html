@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
-    <title>LARelief</title>
+    <title>Medimap AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./css/project-detail.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -14,14 +15,16 @@
                         'project-beige': '#fff8d9',
                         'project-navy': '#2c3e50',
                         'project-green': '#1d584f'
-                    }
+                    },
+                    fontFamily: {
+                'hanken': ['Hanken Grotesk', 'sans-serif']
+            }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-project-beige min-h-screen">
-    <div class="max-w-3xl mx-auto p-6">
+<body class="bg-project-beige min-h-screen font-hanken">    <div class="max-w-3xl mx-auto p-6">
         <!-- Header with back button, title and icons -->
         <header class="flex items-center justify-between mb-8">
             <!-- Back button -->
@@ -32,7 +35,7 @@
             </a>
             
             <!-- Title -->
-            <h1 id="LARelief" class="text-2xl font-bold text-center text-project-navy underline">LARelief</h1>
+            <h1 id="LARelief" class="text-2xl font-bold text-center text-project-navy underline">Medimap AI</h1>
             
             <!-- Action buttons -->
             <div class="flex space-x-3">
@@ -44,7 +47,7 @@
                 </a>
                 
                 <!-- Website button -->
-                <a href="https://larelief.onrender.com/" id="website-link" target="_blank" class="bg-white rounded-full p-3 w-10 h-10 flex items-center justify-center shadow hover:shadow-md transition">
+                <a href="https://medimap-ai.vercel.app/" id="website-link" target="_blank" class="bg-white rounded-full p-3 w-10 h-10 flex items-center justify-center shadow hover:shadow-md transition">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
@@ -60,20 +63,25 @@
                 
                 <ul class="list-disc ml-6 text-sm space-y-2">
                     <li class="mb-2">
-                        <strong>Problem Statement:</strong>
+                        <strong classname>Users can:</strong>
                         <div class="ml-4">
-                            <p>During emergencies like wildfires, many donation centers, food banks, shelters, and other critical organizations are hard to find because they lack proper websites or aren’t listed on Google Maps. Many operate only through social media, making it difficult for those in need or those wanting to help to access information.</p>
-                        </div>
+                            <ol class="list-decimal ml-4 mt-2 space-y-1">
+                                
+                                <li>track their symptom in NLP/GPT model calendar.</li>
+                                <li>get actionable advice on when to seek medical attention.
+                                </li>
+                                <li>educated about tumor types, symptom and lobes from dynmaic website and ML driven analysis.</li>
+                            </ol>                        </div>
                     </li>
                     <li>
-                        <strong>Solution:</strong>
+                        <strong>Healthcare Professionals can:</strong>
                         <div class="ml-4">
-                            <p>Create a centralized platform where users can:</p>
                             <ol class="list-decimal ml-4 mt-2 space-y-1">
-                                <li>Find nearby donation centers, food banks, shelters, and more. </li>
-                                <li>Access real-time wildfire updates, evacuation alerts and up-to-date air quality information.</li>
-                                <li>Volunteer, donate, and help organizations that lack an online presence.</li>
-                                <li>View essential information about safety tips, accessibility, and contact details.</li>
+                                
+                                <li>facilitate better treatment planning with system-generated insights.
+                                </li>
+                                <li>reducs repetitive questioning and paperwork.
+                                </li>
                             </ol>
                         </div>
                     </li>
@@ -85,13 +93,9 @@
                 <h2 class="text-xl font-bold text-project-navy mb-4">Prototype</h2>
                 
                 <div class="flex flex-col space-y-4 md:space-y-0 md:space-x-6">
-                    <div class="flex flex-row items-center mb-4">
-                        <img src="../image/larelieflogo.png" alt="LARelief Logo" class="w-36 h-36 rounded-full shadow-md mr-4">
-                        <p class="text-center text-sm italic mt-2">explain logo here</p>
-                    </div>
                     
-                        <div class="bg-gray-200 rounded-lg shadow-md w-full h-48 flex items-center justify-center">
-                            <p class="text-gray-500">Project Screenshot</p>
+                        <div class="bg-gray-200 rounded-lg shadow-md w-full flex items-center justify-center">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/Q3v1lY4M8pKlZCDFxdkT3O/MediMapAI?node-id=0-1&embed-host=share" allowfullscreen></iframe>
                         </div>
                 </div>
             </section>
@@ -101,42 +105,53 @@
                 <h2 class="text-xl font-bold text-project-navy mb-4">What did I build it with?</h2>
                 
                 <ul class="list-disc ml-6 text-sm space-y-1">
-                    <li>Backend: Java & Spring Boot for handling APIs, PostgreSQL & Next.js for handling user data</li>
+                    <li>ML framework: TensorFlow, PyTorch, Keras, Skikit-Learn</li>
+                    <li>NLP: GPT model</li>
                     <li>Frontend: Tailwind CSS, JavaScript (ReactJS)</li>
-                    <li>Cloud Platform: Hosted on Render</li>
+                    <li>Backend: Firebase</li>
+                    <li>Libraries: Pandas, Matplotlib, Numpy</li>
+                    <li>Cloud Platform: Hosted on Vercel</li>
                     <li>Collaboration Tools: CI/CD pipelines with GitHub Workflows</li>
-                    <li>API: Various third-party integrations</li>
-                    <li>Additional tools: Figma, Docker, Recaptcha, Data Collection</li>
+                    <li>Additional tools: Figma, Docker, Firebase Authentication, Kaggle API</li>
                 </ul>
             </section>
             
-            <!-- Dynamic Map Section (example) -->
+            <!-- Feature Section (example) -->
             <section class="mb-8">
-                <h2 class="text-xl font-bold text-project-navy mb-4">Dynamic Map</h2>
+                <h2 class="text-xl font-bold text-project-navy mb-4">Symptom Assessment and Logging/AI-Generated Reports</h2>
                 
                 <ul class="list-disc ml-6 text-sm space-y-1 mb-4">
-                    <li>Search bar: to find organizations or donation locations by name or proximity to the user’s current location (via Google Maps API).</li>
-                    <li>Different colors and icons based on type (e.g., blue for clothing banks, green for food banks, red fire icons for active wildfire zones, purple for animal shelters).
+                    <li>Reports advise whether a user should seek medical attention.
+                    </li>
+                    <li>Include detailed symptom tracking and possible correlations for the user and healthcare professional.
                         </li>
-                    <li>Closed locations represented with grey pins.</li>
                 </ul>
                 
-                <div class="bg-gray-200 rounded-lg shadow-md w-full h-48 flex items-center justify-center">
-                    <p class="text-gray-500">Feature Screenshot</p>
+                <div class="bg-gray-200 rounded-lg shadow-md w-full flex items-center justify-center">
+                    <img src="/image/tumorAssessment.png" alt="Medimap AI" class="w-full h-full object-cover">
                 </div>
             </section>
             
             <!-- Additional sections would follow the same pattern -->
+            <section class="mb-8">
+                <h2 class="text-xl font-bold text-project-navy mb-4">Tumor Detector</h2>
+                
+                <ul class="list-disc ml-6 text-sm space-y-1 mb-4">
+                    <li>Two ML models detects tumor type and segmente the image.
+                    </li>
+                    <li>Detects tumor size, volume, and location and predicts on growth rate.
+                        </li>
+                        <li>Models were deployed by using hugging face and docker.
+                        </li>
+                </ul>
+                
+                <div class="bg-gray-200 rounded-lg shadow-md w-full flex items-center justify-center">
+                    <img src="/image/tumorDetector.png" alt="Medimap AI" class="w-full h-full object-cover">
+                </div>
+            </section>
             
             <!-- Last section (Lessons Learned) -->
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-project-navy mb-4">Lessons Learned</h2>
-                
-                <ul class="list-disc ml-6 text-sm space-y-1">
-                    <li>Deepened our understanding of integrating diverse APIs and handling live geospatial data.</li>
-                    <li>Collaborated with a team member in an Agile environment to develop full-stack applications, gaining hands-on experience in both front-end and back-end development.</li>
-                </ul>
-            </section>
+            
         </main>
         
     </div>
