@@ -1,0 +1,78 @@
+/* Project detail page specific styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.project-content h2 {
+    color: #2c3e50; /* Navy blue color from the image */
+    font-weight: 700;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-content ul, .project-content ol {
+    margin-bottom: 1rem;
+}
+
+.project-content li {
+    margin-bottom: 0.25rem;
+}
+
+.project-content strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Custom background color to match the image */
+.bg-project-beige {
+    background-color: #f5e8c0; /* The beige color from the image */
+}
+
+/* Smooth transition for back button hover */
+a:hover {
+    transition: all 0.3s ease;
+}
+
+/* Make sure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+}
+
+.logo-container {
+    background-color: #1d584f; /* Green color from the image */
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Style for the note at the bottom of sections */
+.section-note {
+    font-style: italic;
+    text-align: right;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    color: #6b7280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .logo-container {
+        width: 72px;
+        height: 72px;
+    }
+}

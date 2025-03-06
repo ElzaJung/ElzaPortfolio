@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Elza, Developer </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Hanken Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        'soft-yellow': '#fff8d9',
+                    }
+                }
+            }
+        };
+    </script>
+
+</head>
+<body class="bg-soft-yellow">
+    <div class="container mx-auto px-4 py-8 max-w-6xl"
+    >
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center mb-16">
+            <a href="index.html" class="text-2xl font-bold text-indigo-900 cursor-pointer">Elza Jung</a>
+            <div class="space-x-4">
+                <a href="#work" class="text-indigo-900 hover:text-indigo-700">work</a>
+                <a href="https://elzajung.github.io/" class="text-indigo-900 hover:text-indigo-700" target="_blank">blog</a>
+                <a href="about.html" class="text-indigo-900 hover:text-indigo-700">about</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-24">
+            <div class="md:w-1/2">
+                <h1 class="text-7xl font-bold text-white mb-6" id="greeting-typewriter"></h1>
+                <div class="text-3xl text-indigo-900">
+                    <h6>I'm Elza, a</h6>
+                    <h6 id="typewriter">Software Developer</h6>
+                    <h6>based in Waterloo</h6>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                <div class="rounded-3xl overflow-hidden md:w-30rem] md:h-[30rem]">
+                    <img src="image/profile.png" alt="Profile" class="w-full h-full object-cover">
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+
+        <section id="work" class="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div class="project-card bg-white rounded-[1.5rem] overflow-hidden shadow-md">
+                <div class="p-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">LARelief</h3>
+                            <p class="text-amber-700">1000+ users on the website</p>
+                        </div>
+                        <a href="larelief" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        LA wildfire resource platform with prevention resources with wildfire/air quality tracker and various languages support. Dynamic filtering capabilities to help users find and contribute to disaster relief efforts, including volunteer opportunities, donations, and essential resources.                    </p>
+                </div>
+                <div class="mt-4">
+                    <img src="image/LARelief.png" alt="Project Screenshot" class="w-full rounded-md">
+
+                </div>
+            </div>
+            
+
+            <!-- Project 2 -->
+            <div class="project-card bg-white rounded-[1.5rem] overflow-hidden shadow-md">
+                <div class="p-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">MediMap AI</h3>
+                            <p class="text-amber-700">ML/GPT model driven solution</p>
+                        </div>
+                        <a href="medimapai" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        CNN-based diagnostic model trained on clinical datasets and Kaggle API to assess tumor probability, type and size using X-ray images. Patient symptom tracker with an auto-generated report, a pre-detailed symptom selection feature and a custom-built calendar for streamlined monitoring.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <img src="image/Medimapai.png" alt="Project Screenshot" class="w-full rounded-md">
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card bg-white rounded-[1.5rem] overflow-hidden shadow-md">
+                <div class="p-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Dynamic Sales Dashboard</h3>
+                            <p class="text-amber-700">Power BI bashboard</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Designed and implemented a dynamic dashboard to track internet sales, offering filters by customer and product for granular analysis. Developed visual graphs highlights top-performing customers and products, improving sales follow-up strategies.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <video controls class="w-full rounded-md">
+                        <source src="image/InteractiveDashboard.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card bg-white rounded-[1.5rem] overflow-hidden shadow-md">
+                <div class="p-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Multithreaded Prime Gaps Calculation</h3>
+                            <p class="text-amber-700">Parallel Programming Research</p>
+                        </div>
+                        
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Implemented a scalable Master-Worker parallel computing model in C++ with MPI to compute the largest consecutive prime gaps over an interval of up to 1 billion, achieving a 24-second runtime on 8 processors.
+
+                    </p>
+                </div>
+                
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card bg-white rounded-[1.5rem] overflow-hidden shadow-md">
+                <div class="p-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">N-Chess</h3>
+                            <p class="text-amber-700">heuristic algorithms</p>
+                        </div>
+                        <a href="https://github.com/ElzaJung/NQueens" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Developed a Python implementation of the MIN-CONFLICTS algorithm to solve the n-1ueens Constraint Satisfaction Problem (CSP) efficiently, demonstrating expertise in local search optimization techniques.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <img src="image/N-Chess.png" alt="Project Screenshot" class="w-full rounded-md">
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card bg-white rounded-[1.5rem] overflow-hidden shadow-md">
+                <div class="p-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Adobe Portfolio</h3>
+                            <p class="text-amber-700">Photoshop, Illustrator, Indesign</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1lRWtLXxQwAH0DVeSikPYAtupsfA7rCIy/view" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Designed logo, phone case, package, advertisement, movie poster, magazine, book cover and leaflet.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <img src="image/AdobePortfolio.gif" alt="Project Screenshot" class="w-full rounded-md">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-20 mb-8 text-center">
+        <div class="pt-8">
+          <p class="text-gray-600">© 2025 Elza Jung | All Rights Reserved</p>
+        </div>
+      </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
