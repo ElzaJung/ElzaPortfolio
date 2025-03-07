@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "안녕하세요!",
         "Bonjour!",
         "こんにちは!",
+        "Merhaba!",
         "你好!",
       ],
       typingSpeed: 150,
