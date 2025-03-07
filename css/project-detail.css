@@ -66,6 +66,25 @@ img {
     color: #6b7280;
 }
 
+.macbook-mockup {
+    position: relative;
+    width: 600px; /* Adjust based on your mockup size */
+}
+
+.macbook-mockup img {
+    width: 100%;
+    display: block;
+}
+
+.macbook-mockup video {
+    position: absolute;
+    top: 20%; /* Adjust to fit the MacBook screen */
+    left: 12%;
+    width: 76%; /* Resize to fit the screen */
+    height: 60%;
+    object-fit: cover;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .project-content h2 {
