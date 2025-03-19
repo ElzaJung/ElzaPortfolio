@@ -82,10 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
     new Typewriter({
       element: typewriterElement,
       words: ["Software Developer", "Data Scientist", "Full Stack Developer"],
-      typingSpeed: 100,
+      typingSpeed: 90,
       erasingSpeed: 50,
-      newTextDelay: 2000,
-      startDelay: 500,
+      newTextDelay: 1500,
+      startDelay: 0,
     });
   }
 
@@ -102,9 +102,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "Merhaba!",
         "你好!",
       ],
-      typingSpeed: 150,
-      erasingSpeed: 100,
-      newTextDelay: 3000,
+      typingSpeed: 90,
+      erasingSpeed: 60,
+      newTextDelay: 1300,
       startDelay: 0,
       textClass: "text-black",
     });
