@@ -12,6 +12,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <meta name="description" content="Elza Jung's developer portfolio website">
     <title>Elza, Developer </title>
     <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -89,7 +90,7 @@
                         </a>
                     </div>
                     <p class="mt-4 text-sm">
-                        LA wildfire resource platform with prevention resources with wildfire/air quality tracker and various languages support. Dynamic filtering capabilities to help users find and contribute to disaster relief efforts, including volunteer opportunities, donations, and essential resources.                    </p>
+                        LA wildfire resource platform with prevention resources with wildfire/air quality tracker and various languages support. </p>
                 </div>
                 <div class="mt-4">
                     <video autoplay loop muted>
@@ -114,8 +115,7 @@
                         </a>
                     </div>
                     <p class="mt-4 text-sm">
-                        CNN-based diagnostic model trained on clinical datasets and Kaggle API to assess tumor probability, type and size using X-ray images. Patient symptom tracker with an auto-generated report, a pre-detailed symptom selection feature and a custom-built calendar for streamlined monitoring.
-                    </p>
+                        This tool allows you to predict tumor type and size, and generate sentiment-annotated images from any X-ray. It also includes a patient symptom tracker designed to enhance communication between doctors and patients through reports generated from the tracker.                    </p>
                 </div>
                 <div class="mt-4">
                     <picture>
@@ -133,13 +133,14 @@
                             <h3 class="text-xl font-bold">EnviroVest</h3>
                             <p class="text-amber-700">3rd Place at Google x Laurier Analytics Society's Case Study</p>
                         </div>
-                        <a href="" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex">
+                        <a href="https://data-minds.vercel.app/" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </a>
                     </div>
                     <p class="mt-4 text-sm">
+                        A platform that helps Canadians make smarter, more sustainable investment choices in Canadian companies by delivering real-time ESG risk ratings.
                     </p>
                 </div>
                 <div class="mt-4">
@@ -158,7 +159,7 @@
                         </div>
                     </div>
                     <p class="mt-4 text-sm">
-                        Designed and implemented a dynamic dashboard to track internet sales, offering filters by customer and product for granular analysis. Developed visual graphs highlights top-performing customers and products, improving sales follow-up strategies.
+                        A dynamic dashboard to track internet sales, offering filters by year/month, customer city, and product for granular analysis.
                     </p>
                 </div>
                 <div class="mt-4">
@@ -168,12 +169,8 @@
                     </video>
                 </div>
             </div>
-
             
-
             <!-- Project 5 -->
-            
-            <!-- Project 6 -->
             <div class="project-card bg-white rounded-[1.5rem] overflow-hidden">
                 <div class="p-6">
                     <div class="flex justify-between items-start">
@@ -196,10 +193,12 @@
                 </div>
             </div>
         </section>
+
+
         <!-- Resarch Section -->
         <section id="work" class="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="col-span-full">
-                <h2 class="text-3xl font-bold mb-8">Research Study</h2>
+                <h2 class="text-3xl font-bold mb-8">Research</h2>
             </div>
 
             <!-- Resarch 1 -->
@@ -210,12 +209,21 @@
                             <h3 class="text-xl font-bold">Julia Set</h3>
                             <p class="text-amber-700">Parallel Programming Research</p>
                         </div>
-                        
+                        <a href="https://drive.google.com/file/d/1z6SFyGmgevQ6Jx1FTmWWh1xxbSv7Lz45/view?usp=sharing" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
                     </div>
                     <p class="mt-4 text-sm">
-
+                        Developed a Julia set generator using C++, MPI and Teach cluster to generate 10,000 pixels images, achieving 20x speedup.
                     </p>
                 </div>      
+                <div class="mt-4">
+                    <picture>
+                        <img src="image/juliaset.png" alt="Project Screenshot" class="w-full rounded-md">
+                    </picture>
+                </div>
             </div>
             
             <!-- Resarch 2 -->
@@ -229,10 +237,15 @@
                         
                     </div>
                     <p class="mt-4 text-sm">
-                        Implemented a scalable Master-Worker parallel computing model in C++ with MPI to compute the largest consecutive prime gaps over an interval of up to 1 billion, achieving a 24-second runtime on 8 processors.
+                        A Master-Worker parallel model computes the largest consecutive prime gaps over an interval of up to 1 billion, achieving a 24-second runtime on 8 processors.
 
                     </p>
                 </div>      
+                <div class="mt-4">
+                    <picture>
+                        <img src="image/primegap.png" alt="Project Screenshot" class="w-full rounded-md">
+                    </picture>
+                </div>
             </div>
             <!-- Resarch 3 -->
             <div class="project-card bg-white rounded-[1.5rem] overflow-hidden">
@@ -245,9 +258,14 @@
                         
                     </div>
                     <p class="mt-4 text-sm">
-
+                        Developed a cyclic model generating n=30 pseudorandom numbers in 210 seconds using Teach cluster, C++ and MPI
                     </p>
                 </div>      
+                <div class="mt-4">
+                    <picture>
+                        <img src="image/pseudorandom number generator.png" alt="Project Screenshot" class="w-full rounded-md">
+                    </picture>
+                </div>
             </div>
             <!-- Resarch 4 -->
             <div class="project-card bg-white rounded-[1.5rem] overflow-hidden">
@@ -255,7 +273,7 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h3 class="text-xl font-bold">N-Chess</h3>
-                            <p class="text-amber-700">heuristic algorithms</p>
+                            <p class="text-amber-700">Heuristic algorithms</p>
                         </div>
                         <a href="https://github.com/ElzaJung/NQueens" class="bg-gray-200 hover:bg-gray-300 p-2 rounded-full transition inline-flex" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -264,7 +282,7 @@
                         </a>
                     </div>
                     <p class="mt-4 text-sm">
-                        Developed a Python implementation of the MIN-CONFLICTS algorithm to solve the n-1ueens Constraint Satisfaction Problem (CSP) efficiently, demonstrating expertise in local search optimization techniques.
+                        Implemented MIN-CONFLICTS algorithm to solve the n-queens Constraint Satisfaction Problem (CSP). The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
                     </p>
                 </div>
                 <div class="mt-4">
